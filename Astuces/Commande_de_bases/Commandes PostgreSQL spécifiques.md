@@ -1,5 +1,4 @@
-ommandes PostgreSQL spécifiques
-
+Commandes PostgreSQL spécifiques
 \q : quitte l'interface en ligne de commande de PostgreSQL.
 \l : affiche une liste de toutes les bases de données existantes.
 \c [database] : se connecte à une base de données spécifique.
