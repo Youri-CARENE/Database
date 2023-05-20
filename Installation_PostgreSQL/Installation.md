@@ -7,20 +7,25 @@ Exécutez la commande suivante pour installer PostgreSQL et ses composants néce
 
  
 sudo apt install -y postgresql postgresql-contrib
+
 Démarrer et activer le service PostgreSQL:
 Après l'installation, le service PostgreSQL devrait démarrer automatiquement. Vérifiez le statut du service avec la commande suivante:
 
  
 sudo systemctl status postgresql
+
+
 Pour activer le service PostgreSQL au démarrage, exécutez la commande suivante:
 
  
 sudo systemctl enable postgresql
+
 Se connecter à PostgreSQL:
 Par défaut, PostgreSQL crée un utilisateur système nommé postgres. Pour vous connecter à la base de données en tant qu'utilisateur postgres, exécutez la commande suivante:
 
  
 sudo -i -u postgres
+
 Accéder à l'interface de ligne de commande PostgreSQL:
 Une fois connecté en tant qu'utilisateur postgres, accédez à l'interface de ligne de commande psql avec la commande suivante:
 
@@ -58,8 +63,8 @@ Après avoir apporté des modifications à la configuration, redémarrez le serv
 
  
 sudo systemctl restart postgresql
+
 Se connecter en tant que nouvel utilisateur:
 Pour vous connecter en tant que nouvel utilisateur que vous avez créé, utilisez la commande suivante:
 
  
-psql -U myuser -d mydatabase -h 127.0
