@@ -1,0 +1,18 @@
+postgresql-flask-docker-project/
+
+├   ── Application-test/
+|   |
+│   ├ ── Dockerfile
+│   ├ ── application-simple-flask.py
+│   ├ ── requirements.txt
+|
+├   ── base/
+|   |
+│   ├   ── Dockerfile
+│   ├   ── init-db.sh
+│   ├   ── init.sql
+|
+|
+├── docker-compose.yml
+├── .env
+└── README.md
