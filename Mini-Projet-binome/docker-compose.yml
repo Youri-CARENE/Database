@@ -1,8 +1,8 @@
 version: '3.8'
 
 services:
-  db:
-    build: ./db
+  base:
+    build: ./base
     image: custom-postgres
     container_name: postgres_container
     environment:
@@ -15,13 +15,13 @@ services:
       - app-network
 
   web:
-    build: ./app
+    build: ./Application-test
     image: flask-app
     container_name: flask_container
     ports:
       - "5000:5000"
     depends_on:
-      - db
+      - base
     networks:
       - app-network
 
